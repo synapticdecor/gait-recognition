@@ -7,7 +7,7 @@ from human_pose_nn import HumanPoseIRNetwork
 mpl.use('Agg')
 
 net_pose = HumanPoseIRNetwork()
-net_pose.restore('/models/MPII+LSP.ckpt')
+net_pose.restore('models/MPII+LSP.ckpt')
 
 img = imread('images/dummy.jpg')
 img = imresize(img, [299, 299])
