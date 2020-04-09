@@ -1,10 +1,10 @@
 import numpy as np
 import matplotlib as mpl
+mpl.use('Agg')
 import matplotlib.pyplot as plt
 from scipy.misc import imresize, imread
 
 from human_pose_nn import HumanPoseIRNetwork
-mpl.use('Agg')
 
 net_pose = HumanPoseIRNetwork()
 net_pose.restore('models/MPII+LSP.ckpt')
